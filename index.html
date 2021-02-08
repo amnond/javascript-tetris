@@ -220,6 +220,7 @@
           case KEY.RIGHT:  actions.push(DIR.RIGHT); handled = true; break;
           case KEY.UP:     actions.push(DIR.UP);    handled = true; break;
           case KEY.DOWN:   actions.push(DIR.DOWN);  handled = true; break;
+          case KEY.SPACE:  for (var i=0; i<ny; i++) actions.push(DIR.DOWN);  handled = true; break;
           case KEY.ESC:    lose();                  handled = true; break;
         }
       }
